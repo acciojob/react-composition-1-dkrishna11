@@ -6,9 +6,9 @@ const App = () => {
   let [tab, setTab]=useState("")
   return (
     <div>
-        <ul onClick={(eve)=>setTab(eve.target.value)}>
+        <ul onClick={(eve)=>setTab(eve.target.innerText)}>
           <li>Tab 1</li>
-          <li>Tab 3</li>
+          <li>Tab 2</li>
           <li>Tab 3</li>
         </ul>
         <p>This is the content for {tab}</p>
